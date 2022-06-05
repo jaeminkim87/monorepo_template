@@ -1,0 +1,31 @@
+{
+  "name": "monorepo_template",
+  "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "lint": "eslint ./packages --ext .ts,.tsx,.js,.jsx --cache",
+    "postinstall": "husky install",
+    "test:all": "yarn workspaces foreach --parallel run test"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8",
+    "@types/prettier": "^2",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.4.6",
+    "eslint-plugin-jest-dom": "^4.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.0",
+    "prettier": "^2.6.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "typescript": "^4.7.3"
+  }
+}
